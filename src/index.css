@@ -1,0 +1,199 @@
+html{
+  background-color: #312e2b;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  font-weight: 900;
+  color: whitesmoke;
+}
+.chessBoardContainer {
+  display: flex;
+  width: 800px;
+  height: 800px;
+  margin: auto;
+  border-style: solid;
+  border-width: 3px;
+  flex-direction: row;
+}
+
+ol {
+  list-style: none;
+  display:  flex;
+  flex-wrap: wrap;
+  padding-inline-start: 0px;
+  padding: 0px;
+  margin: 0px;
+
+}
+button {
+  width: 100px;
+  height: 100px;
+  padding: 0px;
+  margin: 0px;
+
+}
+
+
+
+li{
+  width: 100px;
+  height: 100px;
+ padding: 0px;
+ margin: 0px;
+ display: flex;
+ 
+ 
+}
+
+
+span:nth-child(odd) button:nth-child(odd){
+   background-color: #edeed1;
+   border-color: #edeed1;
+   border-style: hidden;
+   display: flex;
+   margin: 0px;
+   align-items: center;
+  justify-content: center;
+  
+}
+span:nth-child(odd) button:nth-child(even){
+  background-color: #779952;
+  border-color: #779952;
+  border-style: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+span:nth-child(even) button:nth-child(odd){
+  background-color: #779952;
+  border-style: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+span:nth-child(even) button:nth-child(even) {
+  background-color: #edeed1;
+  border-color: #edeed1;
+  border-style: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img{
+  mix-blend-mode: multiply;
+}
+button.selected{
+  background-color: black;
+}
+
+
+div.playerNameContainer {
+  display: flex;
+  font-size: 3rem;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2rem;
+  color: white;
+}
+
+.playerEdit {
+  display: flex;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: yellowgreen;
+  font-weight: 900;
+  padding-inline-start: 50px;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.playerEdit #hover {
+  color: white;
+}
+
+ol.leftNavigation{
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+div.centerPiece {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline-start: 50px;
+  margin-inline-end: 50px;
+}
+
+
+/* button.flipChessBoard {
+  background-color: #312e2b;
+  font-size: 2rem;
+  color: white;
+  min-width: 200px;
+  padding: 10px;
+  border-radius: 20px;
+  border-color: black;
+  
+
+}
+button.flipChessBoard:hover {
+  background-color: black;
+} */
+
+
+button.leftNavigation {
+  background-color: #312e2b;
+  font-size: 2rem;
+  color: white;
+  min-width: 200px;
+  padding: 10px;
+  border-radius: 20px;
+  border-color: black;
+}
+
+button.leftNavigation:hover {
+  background-color: black;
+}
+
+
+ol.rightNavigation{
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  margin: 0;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  min-width: 200px;
+  flex-wrap: wrap;
+}
+
+button.rightNavigation {
+  background-color: #312e2b;
+  font-size: 2rem;
+  color: white;
+  min-width: 200px;
+  padding: 10px;
+  border-radius: 20px;
+  border-color: black;
+
+}
+
+button.rightNavigation:hover {
+  background-color: black;
+}
