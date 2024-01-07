@@ -29,6 +29,7 @@ ol {
   padding-inline-start: 0px;
   padding: 0px;
   margin: 0px;
+  flex-direction: column;
 
 }
 button {
@@ -86,9 +87,6 @@ span:nth-child(even) button:nth-child(even) {
   justify-content: center;
 }
 
-img{
-  mix-blend-mode: multiply;
-}
 button.selected{
   background-color: black;
 }
@@ -196,4 +194,47 @@ button.rightNavigation {
 
 button.rightNavigation:hover {
   background-color: black;
+}
+
+span {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li.array button{
+  background-color: #edeed1;
+  border: none;
+  border-style: hidden;
+  border-width: 0;
+
+}
+
+li.array:nth-child(-2n+8) button, 
+li.array:nth-child(8) ~ li.array:nth-child(-2n+15) button, 
+li.array:nth-child(16) ~ li.array:nth-child(-2n+24) button, 
+li.array:nth-child(24) ~ li.array:nth-child(-2n+31) button, 
+li.array:nth-child(32) ~ li.array:nth-child(-2n+40) button, 
+li.array:nth-child(40) ~ li.array:nth-child(-2n+47) button, 
+li.array:nth-child(48) ~ li.array:nth-child(-2n+56) button, 
+li.array:nth-child(56) ~ li.array:nth-child(-2n+63) button {
+    background-color: #779952;
+}
+
+li.array {
+
+  border-style: hidden;
+  border-width: 0;
+}
+
+button#selected {
+  background-color: #ffff33;
+}
+
+button#possibleMove {
+  background-image: url('../src/assets/blackDot.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  background-position: center;
+
 }

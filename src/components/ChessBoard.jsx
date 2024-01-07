@@ -14,9 +14,10 @@ export default function ChessBoard () {
         
         if (firstClick && item.rowItem.value === '')
         {
+            console.log("return no work");
             return
         }
-        console.log("return no work");
+        
         if (firstClick && item.rowItem.value != '' ) {
             setFirstClick(false);
             setPiece(item.rowItem);
